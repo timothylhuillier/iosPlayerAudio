@@ -8,17 +8,21 @@
 
 import UIKit
 import AVFoundation
+import SwiftyJSON
 
 class ViewController: UIViewController {
     
     var clientId:String = "6f56095a4b6389b2bf4265d7c3ab7232"
     var player:Player = Player()
+    var json:JSON = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.player.search("Laurent Garnier", callback: {(json : JSON) in self.json = json})
         
+        //self.player.play()
         
     }
 

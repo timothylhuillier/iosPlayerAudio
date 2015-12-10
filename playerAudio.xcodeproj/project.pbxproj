@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7310CB8C1C198EFC00EE046D /* ArtitsAndTracksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7310CB8B1C198EFC00EE046D /* ArtitsAndTracksController.swift */; };
 		733532C21C1823C700FDA05F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733532C11C1823C700FDA05F /* AppDelegate.swift */; };
 		733532C41C1823C700FDA05F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733532C31C1823C700FDA05F /* ViewController.swift */; };
 		733532C71C1823C700FDA05F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 733532C51C1823C700FDA05F /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		4B50FA6AAB9DCE68284D9E57 /* Pods-playerAudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-playerAudio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-playerAudio/Pods-playerAudio.debug.xcconfig"; sourceTree = "<group>"; };
 		51654A350D375CDD32D65DF6 /* Pods_playerAudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_playerAudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7310CB8B1C198EFC00EE046D /* ArtitsAndTracksController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArtitsAndTracksController.swift; path = ../ArtitsAndTracksController.swift; sourceTree = "<group>"; };
 		733532BE1C1823C700FDA05F /* playerAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = playerAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		733532C11C1823C700FDA05F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		733532C31C1823C700FDA05F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		733532C01C1823C700FDA05F /* playerAudio */ = {
 			isa = PBXGroup;
 			children = (
+				7310CB8B1C198EFC00EE046D /* ArtitsAndTracksController.swift */,
 				733532C11C1823C700FDA05F /* AppDelegate.swift */,
 				733532C31C1823C700FDA05F /* ViewController.swift */,
 				733532C51C1823C700FDA05F /* Main.storyboard */,
@@ -334,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7310CB8C1C198EFC00EE046D /* ArtitsAndTracksController.swift in Sources */,
 				733532C41C1823C700FDA05F /* ViewController.swift in Sources */,
 				733532F01C1828BC00FDA05F /* Player.swift in Sources */,
 				733532C21C1823C700FDA05F /* AppDelegate.swift in Sources */,
