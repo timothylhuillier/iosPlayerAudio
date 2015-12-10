@@ -9,7 +9,11 @@
 import UIKit
 import SwiftyJSON
 
-class ArtitsAndTracksController: UITableViewController {
+class ArtitsAndTracksController: UITableViewController, UISearchBarDelegate {
+    
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    var searchActive : Bool = false
     
     var clientId:String = "6f56095a4b6389b2bf4265d7c3ab7232"
     var player:Player = Player()
@@ -19,13 +23,26 @@ class ArtitsAndTracksController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        /* Setup delegates */
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.searchBar.delegate = self
+        
         self.player.search("Laurent Garnier", callback: {
             (json : JSON) in self.json = json
              print(self.json[0])
             
             self.tableView.reloadData()
         })
+    }
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
         
+        self.player.search(searchText, callback: {
+            (json : JSON) in self.json = json
+            
+            self.tableView.reloadData()
+        })
     }
     
     override func didReceiveMemoryWarning() {

@@ -34,7 +34,7 @@ class Player{
     
     func search(tracksOrArtists: String, callback:(JSON) -> Void){
         
-        Alamofire.request(.GET, "\(self.scApi)/tracks?&client_id=\(self.clientId)",
+        Alamofire.request(.GET, "\(self.scApi)/tracks?&client_id=\(self.clientId)&limit=25",
                           parameters: ["q": tracksOrArtists]).validate().responseJSON { response in
             switch response.result {
             case .Success:
