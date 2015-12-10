@@ -66,6 +66,7 @@ class ArtitsAndTracksController: UITableViewController, UISearchBarDelegate {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("You selected cell #\(indexPath.row)!")
+        self.player.play()
     }
 
 }
